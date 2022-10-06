@@ -1,0 +1,31 @@
+let x = 25;
+let y = 25;
+function setup() {
+  createCanvas(900, 800);
+}
+
+function draw() {
+  background(220,0,150);
+  rect(x,y,50,50);
+}
+
+function keyPressed() {
+  if(x>=0 && x<=750){
+      if(keyCode === LEFT_ARROW){
+      x = x - 10;
+      }
+      if(keyCode === RIGHT_ARROW){
+      x += 10;
+      }    
+      if(x>750) {x=750}
+      if(x<0) 
+}
+  
+
+  if(keyCode === UP_ARROW){
+    y = y - 10;
+  }
+  if(keyCode === DOWN_ARROW){
+    y = y + 10;
+  }
+}
